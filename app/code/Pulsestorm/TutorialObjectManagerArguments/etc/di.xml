@@ -6,5 +6,9 @@
             </argument>
         </arguments>
     </type>            
-    
+    <type name="Pulsestorm\TutorialObjectManagerArguments\Model\Example">
+        <arguments>
+            <argument name="scaler1" xsi:type="string">bar</argument>
+        </arguments>
+    </type>
 </config>
