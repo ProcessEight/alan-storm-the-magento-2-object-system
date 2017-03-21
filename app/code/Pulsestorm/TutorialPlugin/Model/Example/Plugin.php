@@ -12,7 +12,8 @@ class Plugin
 {
 	public function beforeGetMessage( $subject, $thing = 'World', $should_lc = false )
 	{
-		echo "Calling ", __METHOD__, "\n";
+		// Change the first parameter ($thing), but pass through the second one ($should_lc) unchanged
+		return ['Changing the argument', $should_lc];
 	}
 
 //	public function afterGetMessage( $subject, $result )
