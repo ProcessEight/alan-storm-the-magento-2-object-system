@@ -13,6 +13,6 @@
 
     <preference
             for="Pulsestorm\TutorialObjectPreference\Model\Messenger"
-            type="Pulsestorm\TutorialObjectPreference\Model\Messenger2"/>
+            type="Pulsestorm\TutorialObjectPreference\Model\Messenger3"/>
 
 </config>
