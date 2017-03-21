@@ -8,7 +8,7 @@
     </type>
     <type name="Pulsestorm\TutorialObjectManagerArguments\Model\Example">
         <arguments>
-            <argument name="scaler1" xsi:type="string">bar</argument>
+            <argument name="scaler2" xsi:type="const">Magento\Integration\Model\Integration::SETUP_TYPE</argument>
         </arguments>
     </type>
     <type name="Pulsestorm\TutorialObjectManagerArguments\Model\Example">
