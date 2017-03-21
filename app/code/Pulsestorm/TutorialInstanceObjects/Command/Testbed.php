@@ -9,19 +9,19 @@ use \Magento\Framework\ObjectManagerInterface;
 
 class Testbed extends Command
 {
-     protected $pageFactory;
-     public function __construct(\Magento\Cms\Model\PageFactory $pageFactory )
-     {
-         $this->pageFactory = $pageFactory;
-         parent::__construct();
-     }
-    
-//     protected $exampleFactory;
-//     public function __construct(ExampleFactory $example)
+//     protected $pageFactory;
+//     public function __construct(\Magento\Cms\Model\PageFactory $pageFactory )
 //     {
-//         $this->exampleFactory = $example;
-//         return parent::__construct();
+//         $this->pageFactory = $pageFactory;
+//         parent::__construct();
 //     }
+    
+     protected $exampleFactory;
+     public function __construct(ExampleFactory $example)
+     {
+         $this->exampleFactory = $example;
+         return parent::__construct();
+     }
     
     // protected $exampleFactory;
     // protected $manager;            
@@ -42,21 +42,21 @@ class Testbed extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
 //        $output->writeln("You've installed Pulsestorm_TutorialInstanceObjects");
-         $page = $this->pageFactory->create();
-         foreach($page->getCollection() as $item)
-         {
-             $output->writeln($item->getId() . '::' . $item->getTitle());
-         }
-
-         $page = $this->pageFactory->create()->load(1);
-         var_dump($page->getData());
+//         $page = $this->pageFactory->create();
+//         foreach($page->getCollection() as $item)
+//         {
+//             $output->writeln($item->getId() . '::' . $item->getTitle());
+//         }
+//
+//         $page = $this->pageFactory->create()->load(1);
+//         var_dump($page->getData());
                 
-//         $example = $this->exampleFactory->create();
-//         $output->writeln(
-//             "You just used a"                . "\n\n    " .
-//             get_class($this->exampleFactory) . "\n\n"     .
-//             "to create a \n\n    "           .
-//             get_class($example)              . "\n");
+         $example = $this->exampleFactory->create();
+         $output->writeln(
+             "You just used a"                . "\n\n    " .
+             get_class($this->exampleFactory) . "\n\n"     .
+             "to create a \n\n    "           .
+             get_class($example)              . "\n");
         
         
         // $object = 
