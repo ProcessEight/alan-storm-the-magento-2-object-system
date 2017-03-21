@@ -5,10 +5,15 @@
                 <item name="testbedCommand" xsi:type="object">Pulsestorm\TutorialObjectManagerArguments\Command\Testbed</item>
             </argument>
         </arguments>
-    </type>            
+    </type>
     <type name="Pulsestorm\TutorialObjectManagerArguments\Model\Example">
         <arguments>
             <argument name="scaler1" xsi:type="string">bar</argument>
+        </arguments>
+    </type>
+    <type name="Pulsestorm\TutorialObjectManagerArguments\Model\Example">
+        <arguments>
+            <argument name="object1" xsi:type="object">Pulsestorm\TutorialObjectManagerArguments\Model\SomethingCompletelyDifferent</argument>
         </arguments>
     </type>
 </config>
