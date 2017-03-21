@@ -8,12 +8,31 @@
     </type>
     <type name="Pulsestorm\TutorialObjectManagerArguments\Model\Example">
         <arguments>
+            <argument name="scaler1" xsi:type="string">bar</argument>
+        </arguments>
+    </type>
+    <type name="Pulsestorm\TutorialObjectManagerArguments\Model\Example">
+        <arguments>
             <argument name="scaler2" xsi:type="const">Magento\Integration\Model\Integration::SETUP_TYPE</argument>
         </arguments>
     </type>
     <type name="Pulsestorm\TutorialObjectManagerArguments\Model\Example">
         <arguments>
             <argument name="object1" xsi:type="object">Pulsestorm\TutorialObjectManagerArguments\Model\SomethingCompletelyDifferent</argument>
+        </arguments>
+    </type>
+    <type name="Pulsestorm\TutorialObjectManagerArguments\Model\Example">
+        <arguments>
+            <argument name="thearray" xsi:type="array">
+                <item name="0" xsi:type="string">science</item>
+                <item name="bar" xsi:type="string">bar</item>
+                <item name="baz" xsi:type="string">Pulsestorm\TutorialObjectManagerArguments\Model\SomethingCompletelyDifferent</item>
+                <item name="bat" xsi:type="string">
+                    <item name="0" xsi:type="string">Nested array element one</item>
+                    <item name="1" xsi:type="string">Nested array element two</item>
+                    <item name="2" xsi:type="string">Nested array element three</item>
+                </item>
+            </argument>
         </arguments>
     </type>
 </config>
