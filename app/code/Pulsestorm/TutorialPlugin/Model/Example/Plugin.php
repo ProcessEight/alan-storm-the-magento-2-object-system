@@ -12,7 +12,6 @@ class Plugin
 {
 	public function afterGetMessage( $subject, $result )
 	{
-		echo "Calling ", __METHOD__ , "\n";
-		return $result;
+		return 'We are so tired of saying hello';
 	}
 }
