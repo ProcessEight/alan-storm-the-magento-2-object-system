@@ -10,8 +10,13 @@ namespace Pulsestorm\TutorialPlugin\Model\Example;
 
 class Plugin
 {
-	public function afterGetMessage( $subject, $result )
+	public function beforeGetMessage( $subject, $thing = 'World', $should_lc = false )
 	{
-		return 'We are so tired of saying hello';
+		echo "Calling ", __METHOD__, "\n";
 	}
+
+//	public function afterGetMessage( $subject, $result )
+//	{
+//		return 'We are so tired of saying hello';
+//	}
 }
