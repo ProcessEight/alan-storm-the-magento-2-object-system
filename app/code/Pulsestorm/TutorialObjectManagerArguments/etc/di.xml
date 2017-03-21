@@ -1,4 +1,16 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <!--
+        Other acceptable arguments to the xsi:type attribute include:
+        xsi:type="array"
+        xsi:type="string"
+        xsi:type="object"
+        xsi:type="boolean"
+        xsi:type="const"
+        xsi:type="number"
+        xsi:type="string"
+        xsi:type="init_parameter"
+        xsi:type="null"
+     -->
     <type name="Magento\Framework\Console\CommandList">
         <arguments>
             <argument name="commands" xsi:type="array">
