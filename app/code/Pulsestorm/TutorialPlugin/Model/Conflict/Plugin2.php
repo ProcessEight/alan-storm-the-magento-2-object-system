@@ -4,7 +4,8 @@ class Plugin2
 {
     public function afterGetMessage($subject, $result)
     {
-        echo "Calling " , __METHOD__ , "\n";   
-        return 'From Plugin 2';
+        echo "Calling " , __METHOD__ , "\n";
+	    echo "Value of \$result: " . $result . "\n";
+	    return 'From Plugin 2';
     }
 }
